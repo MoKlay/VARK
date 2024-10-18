@@ -1,0 +1,32 @@
+:root{
+  --h1: calc((1vw + 1vh) * 4);
+  --h6: calc((1vw + 1vh) * 1);
+}
+
+@keyframes load {
+  from {
+    background-color: black;
+  }
+}
+@keyframes h1 {
+  from {
+    opacity: 0;
+    transform: translateY(calc(var(--h1) * -1));
+  }
+}
+@keyframes h6 {
+  from {
+    opacity: 0;
+    transform: translateY(calc(var(--h6) * -1)) scale(0);
+  }
+}
+@keyframes title{
+  from {
+    opacity: 1;
+    visibility: visible;
+  }
+  to {
+    opacity: 0;
+    transform: translateY(-70vh);
+  }
+}
